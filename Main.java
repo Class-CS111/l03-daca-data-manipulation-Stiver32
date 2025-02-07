@@ -1,6 +1,5 @@
-// STUDENT NAME:
-// DATE: 
-
+// STUDENT NAME: Cameron Ortega
+// DATE: 2/7/2025
 
 public class Main 
 {
@@ -28,14 +27,16 @@ public class Main
 		a = (14 - monthBday) / 12;
 		y = yearBday + 4800 - a;
 		m = monthBday + 12 * a - 3;
-		jdnBday = dayToday + (153 * m + 2) / 5 + 365 * y + y / 4 - y / 100 + y / 400 - 32045;
+		jdnBday = dayBday + (153 * m + 2) / 5 + 365 * y + y / 4 - y / 100 + y / 400 - 32045;
 		
 		jdnDiff = jdnToday - jdnBday;
 		approxAge = jdnDiff / 365;
 
 		/***** OUTPUT SECTION *****/
-		System.out.println("Julian Day Number for today's date, " + monthToday + "/" + dayToday + "/" + yearToday + ", is " + jdnToday);
-		System.out.println("Julian Day Number for today's date, " + monthBday + "/" + dayBday + "/" + yearBday + ", is " + jdnBday);
-		System.out.println("The difference in days is: " + jdnDiff + " which makes you approximately " + approxAge + " years old!");
+		System.out.println("Julian Day Number for today's date, " + monthToday + "/" + dayToday + "/" + yearToday + ", is " + jdnToday + "\n");
+		System.out.println("Julian Day Number for birthday, " + monthBday + "/" + dayBday + "/" + yearBday + ", is " + jdnBday + "\n");
+		System.out.println("The difference in days is " + jdnDiff + ", which makes you approximately " + approxAge + " years old!");
+
+
   }	
 }
